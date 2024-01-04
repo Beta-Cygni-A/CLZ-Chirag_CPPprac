@@ -48,7 +48,10 @@ Note: A very important feature is joint-miles. This can be calculated by:
 - link to header only library used HERE
 - style guide yet to be chosen
 - Core Goals are in order of importance: security, portability, readability, performance, modern C++
-- have info stored in a comma seperated entry file ( csv? )
+- Code in a modular, easily extensible and re-usable fashion
+- If you are implementing a feature, working on this project, please say what you are working on in the Dev Talk and or open an issue and say you will work on the issue. Please do this so we don't waste time doing a feature someone else is already doing.
+- Fork project, make your changes, test them, if they work, push to dev-branch, then open pull request to main-branch.
+- have info stored in a comma seperated entry file ( csv? ), or mysql database
 - plan is:
     - meet sometime soon and discuss design, code style, usage of git, and repo managment
     - redo main.cpp layout if needed
