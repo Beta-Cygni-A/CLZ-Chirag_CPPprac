@@ -1,36 +1,36 @@
-#include "headers.h"
+#include "headers.h" // put all headers in here
 
 int main
 {
-	mySTD::prinT(read(main_menu.txt), "\n");
+	mySTD::Nln(read(main_menu.txt)); //header only library file print.h is used. Plus read function has not been created.
 
 	int input {};
 	std::cin >> input;
 
-	for(bool status {false}; status == true, --status)
+	while(true)
 	{
 		switch(input)
 		{
 			case 1
-				vehicle::CreateVehicle(input);
-				return true;
+				vehicle::CreateVehicle(input); //Create Vehicle
+				return true; // returning true to keep user on menu
 			case 2
-				user::CreateUser(input);
+				user::CreateUser(input); //Create User
 				return true;
 			case 3
-				data::ListUsers(input);
+				data::ListUsers(input); //List all user(s) or only of specfic vehicle
 				return true;
 			case 4
-				data::ShowLog(input);
+				data::ShowLog(input); //Display log by user(s)
 				return true;
 			case 5
-				data::AccessUserData();
+				data::AccessUserData(); //Manage user data: vehilce(s), miles driven, fuel bought
 				return true;
 			case 6
-				data::ProgramInfo();
+				data::ProgramInfo(); //License, notes from team, easter egg...
 				return true;
 			case 7
-				return false;
+				return false; //exit program
 			default:
 			std::cerr << "Invalid input: " << input << '\n' << "THIS MESSAGE IS ON NEWLINE AFTER CERR OF INPUT";
 			return true;
