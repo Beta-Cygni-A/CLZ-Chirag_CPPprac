@@ -11,9 +11,9 @@ int main
 	{
 		switch(input)
 		{
-			case 1
+			case 1 //CreateVehicle is close to ready, just not sure how to return the object when the name is dynamic
 				vehicle::CreateVehicle(input); //Create Vehicle
-				return true; // returning true to keep user on menu
+i				return true; // returning true to keep user on menu
 			case 2
 				user::CreateUser(input); //Create User
 				return true;
