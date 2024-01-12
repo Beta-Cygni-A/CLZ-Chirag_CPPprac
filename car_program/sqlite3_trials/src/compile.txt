@@ -1,0 +1,1 @@
+clang++ -o exe main.cpp func.cpp -I /usr/local/include/ -L/usr/local/lib -lsqlite3 -std=c++20
