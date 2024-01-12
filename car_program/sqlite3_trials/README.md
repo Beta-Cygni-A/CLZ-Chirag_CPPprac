@@ -7,10 +7,14 @@ the other headers, though currently I have some defenitions in there that
 ideally would be moved into another header but this is test code right, 
 it's not the best but it should work lol. In src directory, main.cpp is of 
 course main, func.cpp has functions in it, ver.cpp is a main.cpp that shows
-you what version of sqlite you have installed, compile.txt has a clang 
-compiler command, so if you are on unix and using clang you can just go 
-"./compile.txt" to execute the code. Maybe we will setup a script, cmake, or
-multiple text files for compiling in the test stage. 
+you what version of sqlite you have installed, FBcompile.txt has a clang 
+compiler command, so if you are on FreeBSD and using clang you can just go 
+"./FBcompile.txt" to execute the code. Maybe we will setup a script, cmake,
+or multiple text files for compiling in the test stage. I will add a compile
+command for those on Linux, since FreeBSD has diffrent directories even
+though it is a descendant of UNIX. If you want a windows one I can try to
+help create a file for that. I can't test the Linux one but it should be 
+correct.
 
 mini_car is a directory that has code exploring program structure and design.
 
