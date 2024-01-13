@@ -35,4 +35,4 @@ int callback_table(void* a, int b, char** c, char** d)
 
 	std::cout << '\n';
 	return 0;
-};
+}
