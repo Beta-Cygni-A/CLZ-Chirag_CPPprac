@@ -1,5 +1,4 @@
 #include "../include/headers.h"
-#include <string>
 
 int main()
 {
@@ -19,7 +18,7 @@ int main()
 			 ");"
 	                };
 
-	rc = sqlite3_open("test.db", &ndb);
+	rc = sqlite3_open("bin/test.db", &ndb);
 
 	if( rc )
 	{
@@ -45,7 +44,10 @@ int main()
 	cte = ("SELECT * FROM VEHICLES;");
 
 	sqlite3_exec(ndb, cte, callback_table, 0, &zErrMsg);
-	
+
+	//take user input and put it in database
+	CreateVehicle(ndb, zErrMsg);
+
 	sqlite3_close(ndb);
 
 	return 0;
