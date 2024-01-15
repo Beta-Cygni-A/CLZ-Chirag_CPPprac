@@ -1,5 +1,19 @@
 #include "../include/headers.h"
 
+getNdatabase()
+{
+	std::cout << "Would you like to create new or load existing database: local (1) or Remote (2) : ";
+	std::cin >> input;
+	switch(input)
+	{
+		case 1
+		LocalDatabase();
+		
+		case 2
+		RemoteDatabse();
+	}
+}
+
 int callback(void *NotUsed, int argc, char **argv, char **azColName)
 {
 	for(int i {0}; i < argc; ++i)
