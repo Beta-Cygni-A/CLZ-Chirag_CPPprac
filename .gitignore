@@ -1,4 +1,3 @@
 #Untracked Files
-car_program/sqlite3_trials/src/exe
-car_program/sqlite3_trials/src/test.db
-car_program/sqlite3_trials/src/test/exe
+car_program/src/exe
+car_program/src/test.db
