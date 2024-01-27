@@ -15,11 +15,11 @@ int main()
 	{
 		switch(input)
 		{
-			case 1 //load database == vehicle/user
+			case 1 //load database then login as user and do stuff, main part of program
 			LD_SUB_menu();
 			return true;
 
-			case 2 //settings/info == load database with info
+			case 2 //settings/info
 			LoadDatabase(Settings-Info)
 			return true;
 

@@ -26,9 +26,9 @@ int callback(void *NotUsed, int argc, char **argv, char **azColName)
 	return 0;
 }
 
-int callback_table(void* a, int b, char** c, char** d)
+int callback_table(void* a, int b, char** c, char** d) //loops through a table to print it
 {
-	static bool queryTitlePrint {true};
+	static bool queryTitlePrint {true}; //I don't remember why I made this static
 
 	if(queryTitlePrint)
 	{
