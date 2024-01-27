@@ -54,8 +54,6 @@ Note: A very important feature is joint-miles. This can be calculated by:
 - have info stored in a comma seperated entry file ( csv? ), or mysql database
 - plan is:
     - meet sometime soon and discuss design, code style, usage of git, and repo managment
-    - redo main.cpp layout if needed
-    - add a compile command to doc.md
     - comment more code
     - finish documentation
     - proceed to fill out the functions
@@ -65,3 +63,4 @@ Note: A very important feature is joint-miles. This can be calculated by:
     - improve the code
     - upgrade to cmake
     - test on multiple platforms and on multiple compilers
+- LD_SUB_menu() will load a database and allow user to login. Once logged in, user may edit database, add vehicle to database, edit their miles, payments, and info (name, vehilces in use...), calculate how many miles drive, homw much owed to what user, how much a user owes you..., if admin remove vehicle from database
